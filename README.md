@@ -3,6 +3,7 @@
 # WaypointAI
 
 Video Link:  https://youtu.be/NBPyXLjsntM
+
 ***Please ignore the folder "Waypoints/WaypointAI - added new stage with new technique used"*** - I tried to delete this but I couldn't for some reason...
 
 For my project I decided to create a waypoint path finder, this was my task and my goal:
@@ -21,7 +22,7 @@ Controls for the third demo:
 
 "L" = Move Gate 2 (Furthest from you)
 
-I wanted to create a fourth scene which allows user input to click and put down a destination for the agent to travel to while avoiding the obstacles in between however I ran into issues with the code and didn't have enough time to fix it.
+I wanted to create a fourth scene which allows user input to click and put down a destination for the agent to travel to while avoiding the obstacles in between however I ran into issues with the code and didn't have enough time to fix it and the reason I created three different scenes was because I wanted to explore different techniques and document my progress as this is the most interesting topic for me and I will be using this in my final project of the year.
 
 I believe nav meshes are very efficient because they are simple enough to implement that you save so much time and can focus on other features of the game or even polish it even more to create more intelligent movement such as rotation, random movement between destinations etc. however on the other case, the only practical benefit to using waypoint graphs is where you want to restrict movement to exact lines rather than certain areas like nav mesh meaning that it is moderately cheaper to operate. 
 
