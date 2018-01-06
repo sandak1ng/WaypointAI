@@ -9,7 +9,7 @@ Video Link:  https://youtu.be/NBPyXLjsntM
 For my project I decided to create a waypoint path finder, this was my task and my goal:
 Waypoint Pathfinder - One or more agents navigating a space using a waypoint graph.  Stretch goal: automatically generate links between hand-placed waypoints. (Harder still is placing the waypoints automatically.)
 
-I created two scenes, one which uses Unity's navigation mesh and the other using checkpoints to move the agent, the reason I created two was because I wanted to explore the different techniques to go about moving an agent from one place to another smoothly, so far there is no user input to my demo's all you need to do is run the program and you will see the agent move around automatically.
+I created three scenes, one and three which uses Unity's navigation mesh and the second scene only using checkpoints to move the agent, the reason I created three was because I wanted to explore the different techniques to go about moving an agent from one place to another smoothly, so far there is no user input to my first and second demo's all you need to do is run the program and you will see the agent move around automatically, my third demo has some controls which are listed below.
 
 In my first scene, I am using navigation mesh which didn't require a lot of code, I simply declared a transform variable and then used "GetComponent< NavMeshAgent>" to update the position of the agent on every frame and that was it, I learnt that there's not much you need to code as Unity does it all for you, the unity navigation GUI was very helpful in helping me distinguish what was obstacles and what was walk-able terrain, I got a lot of help from the Unity documentation, everything I needed was basically described on there[1] I think there are many benefits to using nav meshes and I couldn't really find a lot of cons to it, even if you are not technically gifted in coding you are able to create amazing and intelligent AI movement using nav mesh. 
 
@@ -22,7 +22,7 @@ Controls for the third demo:
 
 "L" = Move Gate 2 (Furthest from you)
 
-I wanted to create a fourth scene which allows user input to click and put down a destination for the agent to travel to while avoiding the obstacles in between however I ran into issues with the code and didn't have enough time to fix it and the reason I created three different scenes was because I wanted to explore different techniques and document my progress as this is the most interesting topic for me and I will be using this in my final project of the year.
+I wanted to create a fourth scene which allows user input to click and put down a destination for the agent to travel to while avoiding the obstacles in between however I ran into issues with the code and didn't have enough time to fix it.
 
 I believe nav meshes are very efficient because they are simple enough to implement that you save so much time and can focus on other features of the game or even polish it even more to create more intelligent movement such as rotation, random movement between destinations etc. however on the other case, the only practical benefit to using waypoint graphs is where you want to restrict movement to exact lines rather than certain areas like nav mesh meaning that it is moderately cheaper to operate. 
 
