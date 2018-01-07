@@ -9,7 +9,7 @@ Final Tech Demo: https://youtu.be/ZLiBTlMZj1A
 For my project I decided to create a waypoint path finder, this was my task and my goal:
 Waypoint Pathfinder - One or more agents navigating a space using a waypoint graph.  Stretch goal: automatically generate links between hand-placed waypoints. (Harder still is placing the waypoints automatically.)
 
-I created three progress scenes and also created a video progression for them three as I felt it would be a waste not to document my progress and how I came about my final tech demo scene, one and three which uses Unity's navigation mesh and the second scene only using checkpoints to move the agent, the reason I created three was because I wanted to explore the different techniques to go about moving an agent from one place to another smoothly, so far there is no user input to my first and second demo's all you need to do is run the program and you will see the agent move around automatically, my third demo has some controls which are listed below.
+I created three progress scenes and also created a video progression for them three as I felt it would be a waste not to document my progress and how I came about my final tech demo scene, one and three which uses Unity's navigation mesh and the second scene only using checkpoints to move the agent, the reason I created three scenes was because I wanted to explore the different techniques to go about moving an agent from one place to another smoothly, so far there is no user input to my first and second demo's all you need to do is run the program and you will see the agent move around automatically, my third progress demo and my final demo for submission has some controls which are listed below.
 
 Video Progress Link:  https://youtu.be/NBPyXLjsntM
 
@@ -24,7 +24,11 @@ Controls for the third demo:
 
 "L" = Move Gate 2 (Furthest from you)
 
-My final tech demo involves a combination of everything I learnt from before, I got the idea from a tutorial that I watched on youtube[2], I created a player which can interact with the nav mesh and you can move around using the mouse buttons, the idea behind this was for the player to become a movable object and make the red enemy agents repath however I wasn't able to achieve this.
+My final tech demo involves a combination of everything I learnt from before, I got the idea from a tutorial that I watched on youtube[2], I created a player which can interact with the nav mesh and you can move around using the mouse buttons I used raycasting for this[3], the idea behind this was for the player to become a movable object and make the red enemy agents repath however I wasn't able to achieve this, you will notice there are two .exe's for the final demo, the reason for this was to allow you to see what was going on in the scene without the camera attached to the player.
+
+Controls for the final demo for submission:
+
+Using mouse to click to your destination
 
 I believe nav meshes are very efficient because they are simple enough to implement that you save so much time and can focus on other features of the game or even polish it even more to create more intelligent movement such as rotation, random movement between destinations etc. however on the other case, the only practical benefit to using waypoint graphs is where you want to restrict movement to exact lines rather than certain areas like nav mesh meaning that it is moderately cheaper to operate. 
 
@@ -32,4 +36,5 @@ References
 
 [1] https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html
 [2] https://www.youtube.com/watch?v=4Kj6YUPLWCw
+[3] https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
 
